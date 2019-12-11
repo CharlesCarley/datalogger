@@ -6,18 +6,18 @@ Allows the user to record generic data sets. The app separates the data by sets,
 
 ## Directories
 
-* [Source](https://github.com/CharlesCarley/java-ccarley/blob/master/datalogger/app/src/main/java/com/github/charlescarley/datalogger)
-* [Design](https://github.com/CharlesCarley/java-ccarley/blob/master/datalogger/design)
-* [Resource](https://github.com/CharlesCarley/java-ccarley/blob/master/datalogger/app/src/main/res)
+* [Source](https://github.com/CharlesCarley/datalogger/blob/master/app/src/main/java/com/github/charlescarley/datalogger)
+* [Design](https://github.com/CharlesCarley/datalogger/blob/master/design)
+* [Resource](https://github.com/CharlesCarley/datalogger/blob/master/app/src/main/res)
 
 ## Packages
 
-* [datalogger](https://github.com/CharlesCarley/java-ccarley/blob/master/datalogger/app/src/main/java/com/github/charlescarley/datalogger)
-  * [charts](https://github.com/CharlesCarley/java-ccarley/blob/master/datalogger/app/src/main/java/com/github/charlescarley/datalogger/charts)
-  * [models](https://github.com/CharlesCarley/java-ccarley/blob/master/datalogger/app/src/main/java/com/github/charlescarley/datalogger/models)
-  * [room](https://github.com/CharlesCarley/java-ccarley/blob/master/datalogger/app/src/main/java/com/github/charlescarley/datalogger/room)
-  * [repositories](https://github.com/CharlesCarley/java-ccarley/blob/master/datalogger/app/src/main/java/com/github/charlescarley/datalogger/repositories)
-  * [models](https://github.com/CharlesCarley/java-ccarley/blob/master/datalogger/app/src/main/java/com/github/charlescarley/datalogger/models)
+* [datalogger](https://github.com/CharlesCarley/datalogger/blob/master/app/src/main/java/com/github/charlescarley/datalogger)
+  * [charts](https://github.com/CharlesCarley/datalogger/blob/master/app/src/main/java/com/github/charlescarley/datalogger/charts)
+  * [models](https://github.com/CharlesCarley/datalogger/blob/master/app/src/main/java/com/github/charlescarley/datalogger/models)
+  * [room](https://github.com/CharlesCarley/datalogger/blob/master/app/src/main/java/com/github/charlescarley/datalogger/room)
+  * [repositories](https://github.com/CharlesCarley/datalogger/blob/master/app/src/main/java/com/github/charlescarley/datalogger/repositories)
+  * [models](https://github.com/CharlesCarley/datalogger/blob/master/app/src/main/java/com/github/charlescarley/datalogger/models)
 
 ### Overview
 
