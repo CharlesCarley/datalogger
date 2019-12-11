@@ -1,0 +1,81 @@
+<resources>
+
+    <!--
+        android:windowBackground
+        android:colorForeground
+        android:colorForegroundInverse
+        android:colorBackground
+        android:colorBackgroundCacheHint
+        colorBackgroundFloating
+        android:textColorPrimary
+        android:textColorPrimaryInverse
+        android:textColorPrimaryDisableOnly
+        android:textColorSecondary
+        android:textColorSecondaryInverse
+        android:textColorTertiary
+        android:textColorTertiaryInverse
+        android:textColorHint
+        android:textColorHintInverse
+        android:textColorHighlight
+        colorControlNormal
+        colorControlHighlight
+        colorButtonNormal
+        colorSwitchThumbNormal
+    -->
+
+    <!-- Base application theme. -->
+    <style name="BaseTheme" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/titleText</item>
+        <item name="android:windowBackground">@color/window</item>
+        <item name="android:popupMenuStyle">@style/BaseTheme.popup</item>
+        <item name="android:actionBarPopupTheme">@style/BaseTheme.popup</item>
+
+        <item name="colorButtonNormal">@color/titleText</item>
+        <item name="colorSwitchThumbNormal">@color/titleText</item>
+
+        <item name="colorControlNormal">@color/titleText</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+    </style>
+
+    <style name="BaseTheme.popup" parent="@style/Widget.AppCompat.PopupMenu">
+        <item name="android:background">@color/window</item>
+    </style>
+
+    <style name="BaseTheme.textEmphasis" parent="TextAppearance.AppCompat.Display1">
+        <item name="android:textColor">@color/emphasis1</item>
+        <item name="android:textSize">@dimen/H1</item>
+    </style>
+
+    <style name="BaseTheme.textSubtleEmphasis" parent="TextAppearance.AppCompat.Display1">
+        <item name="android:textColor">@color/emphasis2</item>
+        <item name="android:textSize">@dimen/H3</item>
+    </style>
+
+    <style name="BaseTheme.labelSubtleSmall" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/emphasis3</item>
+        <item name="android:textSize">@dimen/H3</item>
+    </style>
+
+    <style name="BaseTheme.borderlessButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@color/window1</item>
+        <item name="android:padding">@dimen/P2</item>
+        <item name="android:textColor">@color/emphasis2</item>
+        <item name="android:textSize">@dimen/H3</item>
+    </style>
+
+    <style name="BaseTheme.label" parent="TextAppearance.AppCompat.Display1">
+        <item name="android:textColor">@color/emphasis2</item>
+        <item name="android:textSize">@dimen/H2</item>
+    </style>
+
+    <style name="BaseTheme.textDefault" parent="TextAppearance.AppCompat.Display1">
+        <item name="android:textColor">@color/buttonText</item>
+        <item name="android:textSize">@dimen/H2</item>
+    </style>
+
+
+</resources>

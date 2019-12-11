@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF333333</color>
+    <color name="colorPrimaryDark">#111111</color>
+    <color name="colorAccent">#FF6FADD9</color>
+    <color name="colorAccentDark">#FF32ADFF</color>
+    <color name="titleText">#FFB6B6B6</color>
+
+    <color name="buttonBorderNormal">#FF000000</color>
+
+    <color name="buttonText">#FFA7A7A7</color>
+
+    <!-- Main window color FF333333   -->
+
+    <color name="window_p30">#FF515151</color>
+    <color name="window_p20">#FF474747</color>
+    <color name="window_p10">#FF3D3D3D</color>
+    <color name="window1">#FF333333</color>
+    <color name="window_m5">#FF2E2E2E</color>
+    <color name="window_m10">#FF292929</color>
+    <color name="window_m20">#FF1F1F1F</color>
+    <color name="window_m30">#FF151515</color>
+
+
+
+    <color name="window2">#FF444444</color>
+    <color name="window">#FF2C2C2C</color>
+    <color name="window_d1">#FF101010</color>
+    <color name="window_d2">#202020</color>
+
+    <color name="emphasis1">#FFDCDCDC</color>
+    <color name="emphasis2">#FF9C9C9C</color>
+    <color name="emphasis3">#FF4D4D4D</color>
+    <color name="transparent">#00000000</color>
+
+</resources>
