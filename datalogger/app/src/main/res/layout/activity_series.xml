@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:id="@+id/m_graphLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".7"
+        android:background="@color/window1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/window2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/m_graphRoot"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9">
+
+                    <ViewStub
+                        android:id="@+id/m_graph"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:foregroundTint="@color/emphasis2"
+                        android:foregroundTintMode="multiply" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/window_m10"
+                    android:gravity="center_horizontal"
+
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/m_home"
+                        android:layout_width="@dimen/B1"
+                        android:layout_height="@dimen/B1"
+                        android:layout_gravity="fill_horizontal"
+                        android:layout_marginRight="@dimen/P2"
+                        android:foregroundTint="@color/emphasis2"
+                        android:foregroundTintMode="multiply"
+                        android:onClick="onHomeClick"
+                        android:tint="@color/emphasis2"
+                        app:srcCompat="@drawable/ic_home" />
+
+                    <ImageView
+                        android:id="@+id/m_orderedPairs"
+                        android:layout_width="@dimen/B1"
+                        android:layout_height="@dimen/B1"
+                        android:layout_gravity="fill_horizontal"
+                        android:layout_marginRight="@dimen/P2"
+                        android:foregroundTint="@color/emphasis2"
+                        android:foregroundTintMode="multiply"
+                        android:onClick="onXYClicked"
+                        android:tint="@color/emphasis2"
+                        app:srcCompat="@drawable/ic_ordered_pairs" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/m_area"
+                        android:layout_width="@dimen/B1"
+                        android:layout_height="@dimen/B1"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginRight="@dimen/P2"
+                        android:foregroundTint="@color/emphasis2"
+                        android:foregroundTintMode="multiply"
+                        android:onClick="onAreaIconClick"
+                        android:tint="@color/emphasis2"
+                        app:srcCompat="@drawable/ic_area" />
+
+
+                    <ImageView
+                        android:id="@+id/m_scatter"
+                        android:layout_width="@dimen/B1"
+                        android:layout_height="@dimen/B1"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginRight="@dimen/P2"
+                        android:foregroundTint="@color/emphasis2"
+                        android:foregroundTintMode="multiply"
+                        android:onClick="onScatterIconClick"
+                        android:tint="@color/emphasis2"
+                        app:srcCompat="@drawable/ic_scatter" />
+
+
+                    <ImageView
+                        android:id="@+id/m_bar"
+                        android:layout_width="@dimen/B1"
+                        android:layout_height="@dimen/B1"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginRight="@dimen/P2"
+                        android:foregroundTint="@color/emphasis2"
+                        android:foregroundTintMode="multiply"
+                        android:onClick="onBarIconClick"
+                        android:tint="@color/emphasis2"
+
+                        app:srcCompat="@drawable/ic_bar" />
+
+                    <ImageView
+                        android:id="@+id/m_line"
+                        android:layout_width="@dimen/B1"
+                        android:layout_height="@dimen/B1"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginRight="@dimen/P2"
+                        android:foregroundTint="@color/emphasis2"
+                        android:foregroundTintMode="multiply"
+                        android:onClick="onLineIconClick"
+                        android:tint="@color/emphasis2"
+                        app:srcCompat="@drawable/ic_line" />
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="@dimen/B1"
+                    android:layout_height="@dimen/B1"
+                    android:background="@color/transparent"
+                    android:contentDescription="@string/no_content"
+                    android:onClick="onArrowClicked"
+                    android:tint="@color/emphasis2"
+                    app:srcCompat="@drawable/ic_expand" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/m_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".3"
+        android:paddingLeft="@dimen/P1"
+        android:paddingRight="@dimen/P1" />
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Variable Tracker</string>
+    <string name="no_content">No Content</string>
+    <string name="no_content_sub_text">Add a new data set to get started</string>
+    <string name="no_content_sub_text_series">Add a new series to get started</string>
+    <string name="no_content_sub_text_collection">Add a item to get started</string>
+
+    <string name="menu_add">Add</string>
+    <string name="menu_delete">Delete</string>
+    <string name="menu_edit">Delete</string>
+    <string name="menu_clear">Clear</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_random_palette">Create Random Palette</string>
+    <string name="menu_random_collection">Generate Random Set</string>
+    <string name="test_add">Add Test Elements</string>
+
+    <string name="layout_ok">OK</string>
+    <string name="layout_cancel">Cancel</string>
+
+    <string name="act_edit_set_title">Edit Set: %1$s</string>
+    <string name="act_add_new_set_title">Add New Set</string>
+
+    <string name="act_edit_series_title">Edit Series: %1$s</string>
+    <string name="act_add_new_series_title">Add New Series</string>
+
+    <string name="act_edit_collection_title">Edit Item</string>
+    <string name="act_new_collection_title">Add New Item</string>
+
+    <string name="act_add_new_color_title">Choose Color</string>
+    <string name="act_collection_title">Item View</string>
+
+    <string name="act_add_new_name">Name</string>
+    <string name="act_add_type">Type</string>
+    <string name="act_chart_name">Chart</string>
+
+    <string name="act_add_new_color">Color</string>
+    <string name="act_add_new_color_r">R</string>
+    <string name="act_add_new_color_g">G</string>
+    <string name="act_add_new_color_b">B</string>
+
+    <string name="act_value">Value</string>
+    <string name="act_date">Date</string>
+    <string name="act_time">Time</string>
+    <string name="act_note">Note
+    </string>
+    <string name="hint_number">Number</string>
+    <string name="act_lastmod">Value at Time</string>
+
+    <string name="toast_value_is_required">The value field is required.</string>
+    <string name="toast_name_is_required">The name field is required.</string>
+    <string name="toast_clear">Cleared.</string>
+
+    <string name="choose_time">Choose Time</string>
+    <string name="choose_date">Choose Date</string>
+
+    <string name="undefined">undefined</string>
+
+</resources>
+

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/P1">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/P1">
+
+            <TextView
+                style="@style/BaseTheme.label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/act_add_new_name" />
+
+            <EditText
+                android:id="@+id/m_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:labelFor="@id/m_name"
+                android:selectAllOnFocus="true" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/P1">
+
+            <TextView
+                style="@style/BaseTheme.label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/act_chart_name" />
+
+            <Spinner
+                android:id="@+id/m_chartType"
+                android:entries="@array/chart_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="fill"
+            android:padding="@dimen/P1">
+
+            <TextView
+                style="@style/BaseTheme.label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/P1"
+                android:text="@string/act_add_new_color" />
+
+            <Button
+                android:id="@+id/m_colorChooser"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/B1"
+                android:layout_weight="1"
+                android:alpha="0.6"
+                android:background="@color/colorAccentDark"
+                android:backgroundTintMode="src_atop"
+                android:gravity="fill|end"
+                android:onClick="onChooseColor"
+                android:padding="@dimen/P2"
+                android:textAllCaps="false"
+                android:textColor="@color/buttonText"
+                android:textIsSelectable="false" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <include
+        layout="@layout/ok_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

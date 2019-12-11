@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="ADD" type="id">@+id/ADD</item>
+    <item name="EDIT" type="id">@+id/EDIT</item>
+    <item name="DELETE" type="id">@+id/DELETE</item>
+    <item name="RANDOM" type="id">@+id/RANDOM</item>
+</resources>
