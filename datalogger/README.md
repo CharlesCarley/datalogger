@@ -2,6 +2,8 @@
 
 Allows the user to record generic data sets. The app separates the data by sets, which can house N number of series per set. Each series can have a collection of entries associated with it. Entries are stored with a value and a date/time. Then a basic chart library will plot all of the collection elements for a specific set. The x-axis represents the time difference in days starting from the earliest logged time. The y-axis represents the range of all entered values.  
 
+[ScreenShots](design/README.md) of the running application.
+
 ## Directories
 
 * [Source](https://github.com/CharlesCarley/java-ccarley/blob/master/datalogger/app/src/main/java/com/github/charlescarley/datalogger)
@@ -18,8 +20,6 @@ Allows the user to record generic data sets. The app separates the data by sets,
   * [models](https://github.com/CharlesCarley/java-ccarley/blob/master/datalogger/app/src/main/java/com/github/charlescarley/datalogger/models)
 
 ### Overview
-
-[ScreenShots](design/README.md) of the running application.
 
 A functional overview of the application.
 
