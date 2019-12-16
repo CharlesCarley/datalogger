@@ -58,7 +58,6 @@ public abstract class BaseChart extends View
     protected Vector m_baseScale;
     protected Vector m_setScale;
     protected Vector m_scale;
-    protected Vector m_focus;
     protected Path   m_margin;
 
     protected boolean              m_orderedPairs;
@@ -98,7 +97,6 @@ public abstract class BaseChart extends View
         m_matrix = new Matrix();
         m_xAxis  = new Axis();
         m_yAxis  = new Axis();
-        m_focus  = new Vector(0, 0);
 
         m_margin       = new Path();
         m_margins      = new Rect(100, 0, 0, 50);
@@ -535,7 +533,6 @@ public abstract class BaseChart extends View
         m_clickPos.zero();
         m_origin.zero();
         m_setScale.zero();
-        m_focus.zero();
         invalidate();
     }
 
@@ -571,8 +568,6 @@ public abstract class BaseChart extends View
         public boolean onScaleBegin( ScaleGestureDetector detector )
         {
 
-            m_focus.x = detector.getFocusX();
-            m_focus.y = detector.getFocusY();
             return true;
         }
 

@@ -55,10 +55,6 @@ public abstract class ApplicationDatabase extends RoomDatabase
 
     public static void register( Context ctx )
     {
-        // Registers the database should be called first in the
-        // initial onCreate method before the super.onCreate call
-        // so the base class can access
-
         if (m_database == null)
         {
             RoomDatabase.Builder<ApplicationDatabase> builder;
@@ -68,9 +64,6 @@ public abstract class ApplicationDatabase extends RoomDatabase
         }
     }
 
-
-    // Do not use outside of a background thread. This will throw
-    // an invalid state exception of called from the UI thread
     public abstract ColorInterface _colors();
     public abstract SetInterface _sets();
     public abstract SeriesInterface _series();

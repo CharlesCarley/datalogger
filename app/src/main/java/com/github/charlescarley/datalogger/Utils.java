@@ -245,7 +245,7 @@ public class Utils
     }
 
 
-    public static double timeDiffH( long a, long b )
+    private static double timeDiffH( long a, long b )
     {
 
         double dif = Math.max(a, b) - Math.min(a, b);
@@ -283,11 +283,11 @@ public class Utils
     }
 
 
-    public static boolean hasFractionalPart( float v )
+    private static boolean hasFractionalPart( float v )
     {
         float wp = (int) v;
         float fp = v - wp;
-        return  Math.abs(fp) >= 0.01;
+        return Math.abs(fp) >= 0.01;
     }
 
     public static String orderedPairFormat( float x, float y )

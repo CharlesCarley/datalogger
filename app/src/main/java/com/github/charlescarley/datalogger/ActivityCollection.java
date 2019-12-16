@@ -143,7 +143,9 @@ public class ActivityCollection extends ActivityBase implements SetListClickList
         MenuItem clear = menu.add(0, R.id.CLEAR, 0, getString(R.string.menu_clear));
         clear.setOnMenuItemClickListener(this::onClear);
 
-        MenuItem TEMP_GEN = menu.add(0, R.id.GEN_TEST, 0, getString(R.string.menu_random_collection));
+        MenuItem
+            TEMP_GEN =
+            menu.add(0, R.id.GEN_TEST, 0, getString(R.string.menu_random_collection));
         TEMP_GEN.setOnMenuItemClickListener(this::onRandCollection);
 
         m_addMenuItem = menu.add(0, R.id.ADD, 0, getString(R.string.menu_add));

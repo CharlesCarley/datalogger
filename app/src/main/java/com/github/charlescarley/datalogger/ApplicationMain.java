@@ -40,6 +40,5 @@ public class ApplicationMain extends Application
         super.onCreate();
         ApplicationDatabase.register(this);
         Constants.initializeFromContext(this);
-
     }
 }

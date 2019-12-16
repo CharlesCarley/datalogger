@@ -31,20 +31,17 @@ import android.view.MenuItem;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.navigation.NavController;
-import androidx.navigation.NavHost;
 
 import static com.github.charlescarley.datalogger.Utils.LogError;
 
 
-public class ActivityBase extends AppCompatActivity implements NavHost
+public class ActivityBase extends AppCompatActivity
 {
     @Override
     public boolean onOptionsItemSelected( @NonNull MenuItem item )
     {
-        // provide the correct behaviour when
-        // the back button is clicked.
-        // Enabled/Disabled when the title has been set
+        // Provide the correct behaviour when the back button is clicked.
+        // This is enabled/disabled when the title has been set
         // with setActionBarTitle(..., true)
         if (item.getItemId() == android.R.id.home)
         {
@@ -55,14 +52,15 @@ public class ActivityBase extends AppCompatActivity implements NavHost
     }
 
 
-    public void setActionBarTitle( int resourceId, boolean backEnabled, Object ... varg)
+    public void setActionBarTitle( int resourceId, boolean backEnabled, Object... varg )
     {
         // Convenience function, for using
         // a resource id over a string.
         String str = "";
-        try {
+        try
+        {
             str = getString(resourceId, varg);
-        }catch (Exception e)
+        } catch (Exception e)
         {
             Utils.Log(e);
         }
@@ -82,14 +80,5 @@ public class ActivityBase extends AppCompatActivity implements NavHost
         }
         else
             LogError("setActionBarTitle - no action bar was found");
-    }
-
-
-    @NonNull
-    @Override
-    public NavController getNavController()
-    {
-
-        return null;
     }
 }

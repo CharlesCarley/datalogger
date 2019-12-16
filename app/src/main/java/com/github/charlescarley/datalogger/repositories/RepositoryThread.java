@@ -39,7 +39,7 @@ abstract class RepositoryThread<T> extends Thread
 {
     private final Queue<Packet> m_queue;
     private Stack<Packet> m_pool;
-    protected String        m_debug;
+    protected String m_debug;
 
 
     RepositoryThread()
@@ -80,7 +80,7 @@ abstract class RepositoryThread<T> extends Thread
     public void run()
     {
 
-        for (; isAlive(); )
+        while (isAlive())
         {
             try
             {
@@ -90,7 +90,6 @@ abstract class RepositoryThread<T> extends Thread
                     {
                         Packet packet = nextPacket();
                         DispatchCode code = packet.getCmd();
-
 
                         Utils.LogF("%s: Processing cmd(%s)", m_debug, code.toString());
                         handlePacket(packet);
@@ -126,10 +125,12 @@ abstract class RepositoryThread<T> extends Thread
         // first dispatch
         if (!isAlive())
             start();
-
-        synchronized (this)
+        else
         {
-            notify();
+            synchronized (this)
+            {
+                notify();
+            }
         }
     }
 
