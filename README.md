@@ -18,9 +18,3 @@ Allows the user to record generic data sets. The app separates the data by sets,
   * [room](https://github.com/CharlesCarley/datalogger/blob/master/app/src/main/java/com/github/charlescarley/datalogger/room)
   * [repositories](https://github.com/CharlesCarley/datalogger/blob/master/app/src/main/java/com/github/charlescarley/datalogger/repositories)
   * [models](https://github.com/CharlesCarley/datalogger/blob/master/app/src/main/java/com/github/charlescarley/datalogger/models)
-
-### Overview
-
-A functional overview of the application.
-
-![Setup](design/Overview.svg)
